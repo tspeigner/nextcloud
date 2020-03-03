@@ -1,0 +1,12 @@
+---
+- name: Prepping NextCloud
+  hosts: cloud
+  remote_user: centos
+  become: true
+
+  roles:
+    - common
+    - nc-packages
+    - nc-httpd
+    - nc-php
+    - nextcloud

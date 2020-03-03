@@ -1,0 +1,6 @@
+---
+target: localhost
+nc_release: { { Specify Version - I use 'latest-$version' } }
+nc_friendly: <define fqdn>
+nc_datadir: /opt/nextcloud
+certbot_contact_email: certs@fqdn

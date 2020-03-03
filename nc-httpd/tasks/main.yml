@@ -1,0 +1,11 @@
+---
+- name: Install NextCloud httpd
+  yum:
+    name: httpd
+    state: present
+
+- name: Apache service enabled/started
+  systemd:
+    name: httpd
+    state: started
+    enabled: yes

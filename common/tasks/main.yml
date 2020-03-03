@@ -1,0 +1,23 @@
+---
+- name: Install epel and scl repo
+  yum:
+    name: "{{ repo_packages }}"
+    state: present
+  vars:
+    repo_packages:
+      - epel-release
+      - centos-release-scl
+
+- name: Install Baseline Tools
+  yum:
+    name: "{{ base_packages }}"
+    state: latest
+  vars:
+    base_packages:
+      - yum-utils
+      - unzip
+      - curl
+      - wget
+      - bash-completion
+      - bzip2
+      - mlocate
