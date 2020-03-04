@@ -1,0 +1,9 @@
+.env
+*.tfvars
+
+#State files
+*.tfstate
+*.tfstate.*
+
+# Local TF directory
+**/.terraform/*
