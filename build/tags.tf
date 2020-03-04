@@ -6,5 +6,5 @@ resource "digitalocean_tag" "nextcloud" {
     name = "nextcloud"
 }
 resource "digitalocean_tag" "ncdb" {
-    name = "nextcloudDB"
+    name = "ncdb"
 }
