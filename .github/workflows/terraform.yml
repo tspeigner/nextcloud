@@ -44,6 +44,6 @@ jobs:
         env:
           # TF_VAR_do_token: "do_token"
           # TF_VAR_ssh_fingerprint: "ssh_fingerprint"
-          ssh_fingerprint: ${{ secrets.ssh_fingerprint }}
-          do_token: ${{ secrets.do_token }}
+          TF_VAR_ssh_fingerprint: ${{ secrets.ssh_fingerprint }}
+          TF_VAR_do_token: ${{ secrets.do_token }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
