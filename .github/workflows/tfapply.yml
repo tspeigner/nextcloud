@@ -19,6 +19,6 @@ jobs:
           tf_actions_subcommand: "apply"
           tf_actions_working_dir: ${{ env.tf_working_dir }}
         env:
-          TF_VAR_do_token: "do_token"
+          TF_VAR_do_token: "do_apply"
           TF_VAR_ssh_fingerprint: "ssh_fingerprint"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
