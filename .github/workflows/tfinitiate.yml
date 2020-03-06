@@ -53,8 +53,10 @@ jobs:
           tf_actions_version: ${{ env.actions_version }}
           tf_actions_subcommand: "apply"
           tf_actions_working_dir: ${{ env.tf_working_dir }}
+          tf_actions_comment: true
           args: "plan.tfplan"
+        if: github.event.action != 'closed'
         env:
-          # TF_VAR_do_token: "do_token"
+          DIGITALOCEAN_TOKEN: ${{ secrets.DIGITALOCEAN_TOKEN }}
           # TF_VAR_ssh_fingerprint: "ssh_fingerprint"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
