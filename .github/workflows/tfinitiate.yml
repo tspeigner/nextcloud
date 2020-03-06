@@ -47,14 +47,14 @@ jobs:
           TF_VAR_do_token: "do_token"
           TF_VAR_ssh_fingerprint: "ssh_fingerprint"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: "Terraform Apply"
-        uses: hashicorp/terraform-github-actions@master
-        with:
-          tf_actions_version: ${{ env.actions_version }}
-          tf_actions_subcommand: "apply"
-          tf_actions_working_dir: ${{ env.tf_working_dir }}
-          args: "plan.tfplan"
-          do_token: "4fbcb0b9f442f3395b1ef0e552f3898ac992edd4ac47dffb6cff5f633cd52d11"
-        env:
-          TF_VAR_ssh_fingerprint: "ssh_fingerprint"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: "Terraform Apply"
+      #   uses: hashicorp/terraform-github-actions@master
+      #   with:
+      #     tf_actions_version: ${{ env.actions_version }}
+      #     tf_actions_subcommand: "apply"
+      #     tf_actions_working_dir: ${{ env.tf_working_dir }}
+      #     args: "plan.tfplan"
+      #   env:
+      #     TF_VAR_do_token: "do_token"
+      #     TF_VAR_ssh_fingerprint: "ssh_fingerprint"
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

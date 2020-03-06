@@ -1,4 +1,4 @@
-name: "Terraform GitHub Actions - Apply"
+name: "Apply"
 on:
   pull_request_review_comment:
     types: [edited]
