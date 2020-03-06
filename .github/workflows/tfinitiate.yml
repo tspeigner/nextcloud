@@ -4,7 +4,7 @@ on:
 env:
   tf_version: "latest"
   tf_working_dir: "./build"
-  tf_actions_version: 0.12.13
+  tf_actions_version: "0.12.13"
 jobs:
   terraform:
     name: "Terraform"
