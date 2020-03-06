@@ -1,7 +1,6 @@
 name: "Apply"
 on:
-  pull_request_review_comment:
-    types: [edited]
+  - pull_request
 env:
   tf_version: "latest"
   tf_working_dir: "./build"
