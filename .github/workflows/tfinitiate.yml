@@ -54,7 +54,7 @@ jobs:
           tf_actions_subcommand: "apply"
           tf_actions_working_dir: ${{ env.tf_working_dir }}
           args: "plan.tfplan"
-          do_token: ${{ secrets.do_token }}
+          do_token: "4fbcb0b9f442f3395b1ef0e552f3898ac992edd4ac47dffb6cff5f633cd52d11"
         env:
           TF_VAR_ssh_fingerprint: "ssh_fingerprint"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
